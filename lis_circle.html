@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="my_css/lis_circle.css" class="main-less">
+ <link rel="stylesheet"  href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public_css/Listen_pageMain.css">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<script type="text/jscript" src="my_js/lis_circle.js"></script>
+<script type="text/jscript" src="my_js/listen_play.js"></script>
+<script type="text/jscript" src="my_js/jquery-2.1.1.min.js"></script>
+</head>
+
+<body id="mainPage"> 
+<header > 
+ <!--导航-->
+ <div class="container">
+    <div class="row navbar-fixed-top" id="header" >
+       <div class="col-xs-3 text-left"><a  id="navleft"  style="text-decoration:none;" onClick="chuanshu1()"/> 上一题</a></div>
+      <div class="col-xs-6 text-center "  id="unit"><b id="danyuan"></b></a></div>
+      <div class=" col-xs-3 text-right "><a  id="navright" style="text-decoration:none;" onClick="chuanshu()" >下一题</a></div>
+    </div>
+  </div>
+  <!--整个题型的题目-->
+ <div class="row" id="title" >
+   <div  id="timu" class="col-xs-9 "><b></b></div>
+   <div  id="page" class="col-xs-3 text-center"><b id="nowpage"></b>/<b id="allpage"></b></div>
+  </div>
+</header>
+  <!-----------------------------------------------具体内容1------------------------------------------------------>
+<div class=" text-center" id="highscore" > <span>最高分：<strong id="speakhighscore"></strong></span> </div>
+ <div class="row" id="xuan">
+  
+</div>
+   
+   
+   <section>
+    
+     <div  class="row container-fluid ">
+      <div class="col-xs-12" id="box1">
+    
+ 
+        <input type="text"  id="txt0" readonly/>
+         <input type="text"  id="txt1" readonly/>
+          <input type="text"  id="txt2" readonly/>
+        </div>
+       </div>
+       
+
+    </section>
+ 
+
+<!------------------------------------底部------------------------------------------>
+<footer>
+  <div class="row navbar-fixed-bottom" id="foot" >
+     <div class=" col-xs-12">
+       <button type="button" class="btn btn-default" id="btn1" onClick="Listener()">题目录音
+			<img src="pic/pub_listen_listening.png" style="width: 35px;" id="listenPlay"/>
+	   </button>
+	   <button type="button" class="btn btn-default btn1 " id="return" onClick="writeagain()">重做</button>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
